@@ -6,14 +6,14 @@ class Deckdriod < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/theasmat/deckdriod/releases/download/v#{version}/deckdriod-aarch64-apple-darwin.tar.gz"
-      sha256 "399f567839a1cc84cf48dde1f6b22c2c4aed1e6f5d4daf84cb61ae2c0f33eefc"
+      sha256 "b6a9c48e27afe7e77e990e4e38517011b87ce951e865c793e36da125264a0c67"
     else
       url "https://github.com/theasmat/deckdriod/releases/download/v#{version}/deckdriod-x86_64-apple-darwin.tar.gz"
-      sha256 "b6dbe84446ba58a555bfc93ec946b692e503dc24f1935944830d463b3d885c37"
+      sha256 "6c4d86743947825864b7a7e435ed75c5d08191d4001ac9413dfee5f99612a3cb"
     end
   elsif OS.linux?
     url "https://github.com/theasmat/deckdriod/releases/download/v#{version}/deckdriod-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "167e0a63067bb4dc9b860cc66327100623ea7150efcd3de6a78a353408404c2b"
+    sha256 "388b63b532ed176dd1a3b21825a3e6d9281d0b8450f827f266b4e6099cc730ae"
   end
 
   def install
