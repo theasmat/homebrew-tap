@@ -1,19 +1,19 @@
 class Deckdriod < Formula
   desc "Professional Android Development Dashboard"
   homepage "https://github.com/theasmat/deckdriod"
-  version "1.1.0"
+  version "1.1.1"
 
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/theasmat/deckdriod/releases/download/v#{version}/deckdriod-aarch64-apple-darwin.tar.gz"
-      sha256 "edecb14427f07fc98263f18d9dc27722d1436a6af74c197a3328b43eb2149444"
+      sha256 "f3cecccd349e4804d04ae2d800de687c505386138c4029674ec6c0d8bd901617"
     else
       url "https://github.com/theasmat/deckdriod/releases/download/v#{version}/deckdriod-x86_64-apple-darwin.tar.gz"
-      sha256 "496b65af556ea677653251fbaa88be65c746ae6c23ee2bed4a4409f8ed77d84f"
+      sha256 "52b98b67688ca5a2ca59a22a1e006bc1fa057ba27797635ff43fdab4bec16f86"
     end
   elsif OS.linux?
     url "https://github.com/theasmat/deckdriod/releases/download/v#{version}/deckdriod-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "7aa4b5ce0c20da8ab093fe1d46917d9355a051c1b9db3ece743201f9dba1026b"
+    sha256 "2dea61b557d8376044fb475ec052492ebfeca83fe992b02964bcd930428d01ca"
   end
 
   def install
